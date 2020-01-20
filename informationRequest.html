@@ -1,26 +1,96 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>information Request</title>
-</head>
-<body>
-<form>
-<h1>Information Request</h1>
-<br>
-<hr>
-<br>
-Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="First Name" value="First Name">&nbsp;&nbsp;&nbsp;<input type="text" name="Last name" value="Last name">
-<br><br>
-Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" value="ex:myname@example.com">
-<br><br>
-Phone Number:&nbsp;&nbsp;&nbsp;<input type="text" name="area code" maxlength="4" size="4">-<input type="number" name="phone number" size="10">
-<br><br>
-Requesting<br>
-Information<br>
-regarding:&nbsp;&nbsp;&nbsp;<pre><pre><textarea rows="10"></textarea>
-<br><br>
-<div style="align:center">
-<input align=center type="submit" name="submit" value="submit" >
+    <head>
+        <style>
+body{
 
+    font-family: sans-serif;
+}
+.content{
+    background: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 2px solid black;
+}
+img{
+    width: 100%;
+    background: black;
+}
+h1{
+    padding: 40px;
+}
+hr{  
+    margin-top: -30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h6{
+    font-size: 10px;
+    margin-top: -25px;
+    margin-left: 100px;
+    font-weight: bolder;
+}
+.para{
+    margin-top: 20px;
+}
+p{
+    margin-top: -25px;
+}
+input{
+    border: 1px solid darkgrey;
+}
+input[type="email"]{
+    width: 348px;
+}
+input[type="number"]{
+    width: 100px;
+}
+input[type="number"]{
+    width: 50px;
+}
+textarea{
+    float: left;
+    margin-top: -90px;
+    margin-left: 165px;
+    height: 80px;
+    width: 360px;
+}
+button{
+    margin-left: 165px;
+    background: lightgray;
+    padding: 5px;
+    cursor: pointer;
+}
+</style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Information Request</h1>
+            <hr>
+<pre>
+    <form><p class="para">
+      Name             <input type="text"> <input type="text">
+      <h6>            First Name                       Last Name</h6>
+</p>
+<p>
+      E-mail           <input type="email" placeholder="ex: myname@example.com">
+      <h6>            example@example.com</h6>
+</p>
+<p>
+      Phone Number     <input type="number"> - <label   class="box"><input type="number"></label>
+    <h6>            Area Code    Phone Number</h6>
+</p>
+<p>
+      Requesting
+      Information
+      Regarding: 
+</p>
+    <textarea class="textarea">
+
+    </textarea>
+<button>Submit Form</button> 
 </form>
-</body>
+</pre>
+        </div>
+    </body>
 </html>
